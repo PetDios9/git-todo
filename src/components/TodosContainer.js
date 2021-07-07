@@ -76,6 +76,11 @@ const TodosContainer = () =>{
                     />
                 </Grid>
                 <Grid item xs={12}>
+                    <Button onClick={handleSubmit}>
+                        Add Todo
+                    </Button>
+                </Grid>
+                <Grid item xs={12}>
                     <Button onClick={clearFinishedTodos} >
                         Clear finished Todos
                     </Button>
