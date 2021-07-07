@@ -24,10 +24,11 @@ const TodosContainer = () =>{
         setTodoText('')
     }
 
-    const changeCompletedProperty = event => {
+    const updateCompletedProperty = event => {
         setTodoItems(prevState => {
             let {id} = event.target
             let updatedTodos = prevState.map(todo => {
+                 // eslint-disable-next-line
                 if (id == todo.id) {
                     return {
                         ...todo,
@@ -46,7 +47,7 @@ const TodosContainer = () =>{
         event.preventDefault()
         let updatedTodos = todoItems
         updatedTodos.push({
-            id: todoItems.length,
+            id: todoItems.length.toString(),
             todoText: todoText,
             completed: false
         })
@@ -60,7 +61,7 @@ const TodosContainer = () =>{
         id={todo.id} 
         todoText={todo.todoText} 
         completed={todo.completed} 
-        changeCompletedProperty={changeCompletedProperty}
+        updateCompletedProperty={updateCompletedProperty}
         />
         )
 

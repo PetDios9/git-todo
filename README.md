@@ -1,3 +1,5 @@
+Simple front end web application made using React and Material UI to track things a user might have to do.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

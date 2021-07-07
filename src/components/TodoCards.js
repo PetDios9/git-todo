@@ -17,7 +17,7 @@ const TodoCards = props => {
         <Grid item xs={3}>
             <Card id={props.id} variant="outlined" className={cardStyles.root}>
                 <CardContent>
-                    <Checkbox checked={props.completed} id={props.id} onChange={props.changeCompletedProperty}/>
+                    <Checkbox checked={props.completed} id={props.id} onChange={props.updateCompletedProperty}/>
                     <Typography variant="body1"
                     style={{
                         textDecoration: props.completed ? 'line-through' : ''
