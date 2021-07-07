@@ -56,17 +56,17 @@ const TodosContainer = () =>{
     }
 
     let renderedTodos = todoItems.map(todo =>
-        <TodoCards 
-        key={todo.id} 
-        id={todo.id} 
-        todoText={todo.todoText} 
-        completed={todo.completed} 
-        updateCompletedProperty={updateCompletedProperty}
+        <TodoCards  
+            key={todo.id}
+            id={todo.id} 
+            todoText={todo.todoText} 
+            completed={todo.completed} 
+            updateCompletedProperty={updateCompletedProperty}
         />
         )
 
     return (
-            <Grid container spacing={1} direction="row" style={{overflow: 'hidden',marginLeft: '1.5em'}}>
+            <Grid container spacing={1} direction="row" alignContent="center" style={{overflowX: 'hidden', paddingLeft: '3%'}}>
 
                 <Grid item xs={12}>
                     <TodoInputBar 

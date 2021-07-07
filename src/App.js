@@ -9,7 +9,7 @@ function App() {
     root: {
         backgroundImage: `url(${Image})`,
         height: '100vh',
-        overflow: 'auto',
+        overflowX: 'hidden',
     }
 }
 
